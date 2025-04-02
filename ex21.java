@@ -82,6 +82,5 @@ public class ex21 {
         System.out.printf("3) Porcentagem de pessoas com olhos azuis: %.2f%%\n", porcentolhoazul);
         System.out.println("4) Quantidade de pessoas ruivas que não possuem olhos azuis: " + qtdruivossemazul);
 
-        ler.close();
     }
 }
