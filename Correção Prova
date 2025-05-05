@@ -1,0 +1,167 @@
+Avaliação  
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+1) Crie um programa em Java que leia um número inteiro e diga se ele é par ou ímpar.
+
+import java.util.Scanner;
+public class atdsf1
+{
+	public static void main(String[] args) {
+        Scanner ler = new Scanner (System.in);
+
+        int n1;
+
+		System.out.println("Insira um número: ");
+        
+        n1 = ler.nextInt();
+
+        if ( n1 % 2 == 0){
+            System.out.print("O número inserido é par.");
+        } else {
+            System.out.print("O número inserido é ímpar.");
+        }
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 2) Escreva um programa em Java que imprima os números de 1 a 10 usando o laço for.  
+
+import java.util.Scanner;
+public class atdsf2
+{
+	public static void main(String[] args) {
+        Scanner ler = new Scanner (System.in);
+
+        for (int i = 1; i <= 10; i++){
+            System.out.println(i);
+        }
+	}
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+3) Faça um programa que leia um número inteiro e diga se ele é primo. Um número é  primo se for maior que 1 e divisível apenas por 1 e por ele mesmo.  
+import java.util.Scanner;
+
+public class atdsf3 {
+    public static void main(String[] args) {
+    Scanner lebron = new Scanner(System.in);
+   
+    System.out.print("Digite um número: ");
+    int num = lebron.nextInt();
+
+    if (num <= 1) {
+    System.out.println("O número inserido não é primo!");
+    } else {
+    boolean numprim = true;
+    for (int i = 2; i < num; i++) {
+    if (num % i == 0) {
+    numprim = false;
+    break;
+}
+    }
+ 
+    if (numprim) {
+    System.out.println("O número inserido é primo!");
+    } else {
+    System.out.println("O número inserido não é primo!");
+}
+    }
+  }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+4) Crie um programa em Java que leia os nomes e idades de 5 pessoas e, após isso,  informe se cada pessoa é maior ou menor de idade.  
+import java.util.Scanner;
+
+public class atdsf4 {
+    public static void main(String[] args) {
+     Scanner lebron = new Scanner(System.in);
+        int yo;
+        String name;
+
+        for (int i = 1; i < 5; i++){
+            System.out.println("Insira a idade da " + i + "º pessoa em anos:");
+            yo = lebron.nextInt();
+            lebron.nextLine();
+            System.out.println("Insira o nome desta pessoa:");
+            name = lebron.nextLine();
+
+
+            if (yo < 18){
+                System.out.println(name + " é menor de idade.");
+            } else {
+                System.out.println(name + " é maior de idade.");
+            }
+    }
+  }
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+5) O que será impresso por este código?  
+ int x = 0; 
+for (int i = 1; i <= 5; i++) {  
+ x += i;  
+}  
+ System.out.println(x);  
+A) 10 
+B) 15  
+C) 5  
+D) 0 
+
+Resposta: B
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+6) Verifique o programa abaixo, identifique e corrija os erros: 
+
+public class SomaSimples { // Não importou a classe 
+ public static void main(String[] args) {  
+ Scanner scanner = new Scanner(System.in);  
+  
+ int num1, num2, soma;  
+ System.out.print("Digite o primeiro número: ");  
+ num1 = scanner.nextint()  //Int está minusculo //Faltou ;
+  
+ System.out.print("Digite o segundo número: ");  
+ num2 = scanner.nextInt();  
+  
+ soma = num1 + num2;  
+  
+ if soma == 10 {  // Faltou o parenteses
+ System.out.println("A soma é 10");  
+ } else soma = 10 {  //Faltou o ! // Faltou parenteses
+ System.out.println("A soma não é 10.");  
+ }  
+  
+ }  
+} 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+7) Qual a principal diferença entre um HD (Hard Disk) e um SSD (Solid State Drive)?
+A) O HD é mais rápido que o SSD.
+B) O SSD não tem partes móveis, enquanto o HD tem discos giratórios.
+C) O SSD utiliza discos magnéticos, enquanto o HD usa circuitos eletrônicos.
+D) O SSD é utilizado apenas em dispositivos móveis, enquanto o HD é utilizado em
+desktops.
+Resposta: B
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+8) Em relação às unidades de processamento gráfico (GPUs), qual das alternativas  caracteriza corretamente uma diferença entre GPUs integradas e GPUs dedicadas? 
+a) GPUs integradas são mais indicadas para aplicações que exigem alto desempenho  gráfico, pois possuem maior largura de banda.  
+b) GPUs dedicadas utilizam a memória RAM do sistema, enquanto as integradas  utilizam memória VRAM exclusiva.  
+c) GPUs integradas operam de forma independente do processador principal, com  memória e refrigeração próprias.  
+d) GPUs dedicadas possuem componentes próprios, como memória VRAM, o que  garante melhor desempenho em tarefas gráficas exigentes. 
+Resposta: D
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+9) Dê o nome e a descrição da cada componente da figura abaixo! 
+Processador - Responsável por processar os comandos e instruções que o computador executa através de calculos binários
+Memória RAM - Guarda dados de forma de forma temporária
+SSD - Guarda dados de forma permanente
+Conectores - É possivel conectar SSD e outros aparelhos
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+10) Essas são entradas de vídeo de o nome delas e a diferença de cada uma delas.
+VGA - Cabo de vídeo antigo
+DVI - Permite resolução full HD
+HDMI - Da vídeo na máquina
+DidplayPort - Da vídeo porém em monitores/ equipamentos mais atuais, permitindo maiores resoluções
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+11) Quais entradas são essas abaixo?
+Uma delas tem a mesma função e só muda a cor por quê?
+Cabo ethernet- RJ45
+Todos os outros cabos são USB, sendo eles:
+USB Preto - 3.0
+USB Vermelho - 3.2
+USB Azul - 2.0
+As cores mudam para que se possa diferenciar o tipo de USB, uma vez que são diferentes por conta da velocidade de transmissão de dados.
+
