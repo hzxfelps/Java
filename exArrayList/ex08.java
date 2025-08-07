@@ -34,6 +34,7 @@ public class ex08 {
         }
 
         System.out.println("\nProdutos com valor maior que R$ 50,00:");
+        //SE NAO estiver vazia (a lista de produtos que custam mais de 50) ele retorna como true e vai para o for, se estiver vai para o else
         if (!productmorethan50.isEmpty()) {
             for (String prod : productmorethan50) {
                 System.out.println(prod);
@@ -45,3 +46,4 @@ public class ex08 {
         read.close();
     }
 }
+
