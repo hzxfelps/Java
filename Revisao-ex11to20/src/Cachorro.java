@@ -1,8 +1,7 @@
-public class Cachorro extends Animal{
-    public void latir() {
-        System.out.println(this.nome+" latiu");
-    }
-    public void lamber() {
-        System.out.println(this.nome+" lambeu");
+public class Cachorro extends Animal {
+
+    @Override
+    public void fazerSom() {
+        System.out.println("O cachorro fez au au");
     }
 }
